@@ -1,0 +1,35 @@
+@-moz-document url("chrome://browser/content/browser.xul") {
+
+    /* Adds more space above the address bar */
+    #navigator-toolbox > toolbar:not(#toolbar-menubar):not(#TabsToolbar) {
+        padding-top: 3px;
+    }
+
+    /* Hides separators between tabs */
+    .tabbrowser-tab::after, .tabbrowser-tab::before {
+        border: 0 !important;
+    }
+
+    /* Adds more space below the bookmarks bar */
+    #personal-bookmarks {
+        padding-bottom: 4px;
+        padding-top: 3px;
+    }
+
+    /* Hide icons in the bookmarks bar */
+    #personal-bookmarks .bookmark-item > .toolbarbutton-icon {
+        display: none !important;
+    }
+
+    /* Adds some more padding to the bookmarks bar items */
+    .bookmark-item {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        padding-bottom: 4px !important;
+    }
+
+    /* Hides the new tab button */
+    .tabs-newtab-button {
+        display: none;
+    }
+}
